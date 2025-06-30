@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Name Input Section -->
+    <div id="name-input" class="name-input">
+        <h1 class="slide-in">Tic-Tac-Toe</h1>
+        <div class="input-group slide-in">
+            <input type="text" id="player1-name" placeholder="Player X Name" maxlength="15">
+            <input type="text" id="player2-name" placeholder="Player O Name" maxlength="15">
+        </div>
+        <button id="start-game" class="start-btn slide-in">Start Game</button>
+    </div>
+
+    <!-- Game Section -->
+    <div id="game-section" class="container" style="display: none;">
+        <h1 class="slide-in">Tic-Tac-Toe</h1>
+        <div id="mode-select" class="mode-select slide-in">
+            <button id="pvp" class="mode-btn active">PvP</button>
+            <button id="pvai" class="mode-btn">PvAI</button>
+        </div>
+        <div id="status" class="status slide-in">Player X's turn</div>
+        <div id="board" class="board slide-in">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="reset" class="reset-btn slide-in">Reset</button>
+        <div class="score-board slide-in">
+            <div class="score-item">
+                <span class="player">X:</span>
+                <span id="score-x" class="score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="player">O:</span>
+                <span id="score-o" class="score">0</span>
+            </div>
+        </div>
+        <button id="back-to-names" class="back-btn slide-in">Change Names</button>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="designer-credit">Designed by Akhil Singh</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
